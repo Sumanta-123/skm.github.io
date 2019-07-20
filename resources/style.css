@@ -1,0 +1,257 @@
+@charset "utf-8";
+.head{
+  width:100%;
+  height:150px;
+  font-family: 'Berkshire Swash', cursive;
+  text-align:center;
+  padding:30px 0 0 0;
+  background-color:rgb(47, 29, 38);
+  -webkit-animation:addmission 0.5s infinite;
+  -o-animation:addmission 0.5s infinite;
+  -o-animation:addmission 0.5s infinite;
+  animation:addmission 5s infinite;
+}
+@-webkit-keyframes addmission{
+  0%{color:red;}
+  25%{color:green;}
+  50%{color:yellow;}
+  75%{color:blue;}
+  85%{color: springgreen}
+  100%{color:pink;}
+}
+@-o-keyframes addmission{
+  0%{color:red;}
+  25%{color:green;}
+  50%{color:yellow;}
+  75%{color:blue;}
+  100%{color:pink;}
+}
+@-moz-keyframes addmission{
+  0%{color:red;}
+  25%{color:green;}
+  50%{color:yellow;}
+  75%{color:blue;}
+  100%{color:pink;}
+}
+/*profile pic of the website goes here*/
+.profil-pic{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:3px groove blue;
+  position: absolute;
+  top:20px;
+  left:20px;
+  -o-animation:profilePic 20s infinite;
+  -moz-animation:profilePic 20s infinite;
+  -webkit-animation:profilePic 20s infinite;
+  animation:profilePic 20s infinite;
+}
+/*profile pic animation goes here*/
+@keyframes profilePic{
+  0%{left:0%;border-color:red;}
+  50%{left:50%;}
+  100%{left:500%;}
+}
+
+.nav{
+  background-color:black;
+}
+.nav-link{
+  color:white;
+  font-size:20px;
+  font-family: 'Prompt', sans-serif;
+}
+/* animation box coding goes here*/
+.mus-photo{ 
+  display:grid;
+  flex-basis:200px;
+  height:400px;
+  margin-top:40px;
+  margin-left:200px;
+  margin-right:200px;
+  border-top:1px solid cyan;
+  background:#2F1D26;
+  box-shadow:1px 2px 2px;
+  outline-style:outset;
+  outline-offset:23px;
+  outline:cyan;
+  overflow:hidden;
+}
+/* animation box coding goes end here*/
+.header{
+  font-size:30px;
+    height:100px;
+}
+/*drop down ul style coding goes here*/
+#drop-down{
+  position:absolute;
+  padding:0;
+  display:grid;
+  width:155px;
+  height:270px;
+  list-style:none;
+  background:#ccc;
+}
+/* drop down ul style coding end here*/
+/*drop down item list style goes here*/
+.drop-down-list{
+  margin:0px;
+  padding:0px;
+  height:44px;
+  padding-top:7px;
+  border-bottom:2px solid cyan;
+  font-weight:bold;
+  text-align:center; 
+}
+/*drop down item list style end here*/
+.drop-down-list:hover{
+  color:white;
+}
+/*responsive style coding for screen 300px goes here*/
+@media only screen and (max-width:300px){
+  .mus-photo{ 
+      height:150px;
+      margin-top:40px;
+      margin-left:20px;
+      margin-right:20px;
+  }
+  .header{
+  font-size:14px;
+  height:100px;
+  }
+}
+/*responsive style coding for device 300 to 600px goes here*/
+@media only screen and (min-width:300px) and (max-width:600px){
+  .mus-photo{ 
+    height:200px;
+    margin-top:40px;
+    margin-left:150px;
+    margin-right:150px;
+    background:#ccc;
+  }
+  .header{
+    font-size:14px;
+    height:100px;
+  }
+}
+/*responsive style for the device 600 to 768 px */
+@media only screen and (min-width:600px) and (max-width:768px){
+  .mus-photo{
+    margin-top:40px; 
+    margin-left:170px;
+    margin-right:170px;
+    background:#ccc;
+  }
+  .header{
+    font-size:14px;
+    height:100px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .mus-photo{ 
+    margin-top:40px;
+    margin-left:200px;
+    margin-right:200px;
+    background:#ccc;
+  }
+  .header{
+    font-size:14px;
+    height:100px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .mus-photo{ 
+    margin-top:40px;
+    margin-left:200px;
+    margin-right:200px;
+    background:#ccc;
+  }
+  .header{
+    font-size:14px;
+    height:100px;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1400px){
+  .mus-photo{ 
+    margin-top:40px;
+    margin-left:200px;
+    margin-right:200px;
+    background:#ccc;
+  }
+  .header{
+    font-size:40px;
+    height:120px;
+  }
+}
+.project-animation{
+  width:1700px;
+  height:300px;
+  border:2px solid red;
+  margin:80px 0 0 0;
+  float: left;
+}
+.project-logo{
+  width:200px;
+  height:200px;
+  border:2px solid cyan;
+  float:left;
+  margin-left:120px;
+  transform:rotate(45deg);
+  transition:1s;
+}
+.project-logo:hover{
+  animation:none;
+  background:greenyellow;
+  border:3px groove red;
+}
+.lang-text{
+  color:blue;
+  text-align:center;
+  position: absolute;
+  top:385px;
+  left:345px;
+  font-size:25px;
+}
+.react-text{
+  left:700px;
+}
+.dstr-text{
+  left:990px;
+}
+/* Full stack text style coding start here*/
+.course-delopr{
+  display:grid;
+  flex-basis:200px;
+  height:150px;
+  border:1px solid red;
+}
+.tag-name{
+  color:red;
+  position:absolute;
+  left:150px;
+  font-size:100px;
+  font-family:'Times New Roman', Times, serif;
+}
+.tag-s{
+  left:540px;
+}
+.tag-d{
+  left:940px;
+}
+/* full remaing text from ull, tack eveloper goes here*/
+.text-ull{
+  font-size:70px;
+  color:blue;
+  font-family:'Times New Roman', Times, serif;
+  position: absolute;
+  left:210px;
+  top:670px;
+}
+.text-tack{
+  left:600px;
+}
+.text-eveloper{
+  left:1015px;
+}
+/*Full stack text coding end */

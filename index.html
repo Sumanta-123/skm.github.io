@@ -5,169 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        Project 6
+        Port folio
     </title>
+    <link rel="stylesheet" href="resources/animate.css">
+    <link rel="stylesheet" href="resources/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Prompt:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bungee+Outline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style>
-        .header{
-            width:100%;
-            height:150px;
-            font-family: 'Berkshire Swash', cursive;
-            text-align:center;
-            padding:30px 0 0 0;
-            background-color:rgb(47, 29, 38);
-            -webkit-animation:addmission 0.5s infinite;
-            -o-animation:addmission 0.5s infinite;
-            -o-animation:addmission 0.5s infinite;
-            animation:addmission 5s infinite;
-        }
-        @-webkit-keyframes addmission{
-            0%{color:red;}
-            25%{color:green;}
-            50%{color:yellow;}
-            75%{color:blue;}
-            85%{color: springgreen}
-            100%{color:pink;}
-        }
-        @-o-keyframes addmission{
-            0%{color:red;}
-            25%{color:green;}
-            50%{color:yellow;}
-            75%{color:blue;}
-            100%{color:pink;}
-        }
-            @-moz-keyframes addmission{
-            0%{color:red;}
-            25%{color:green;}
-            50%{color:yellow;}
-            75%{color:blue;}
-            100%{color:pink;}
-        }
-        .nav{
-            background-color:black;
-        }
-        .nav-link{
-            color:white;
-            font-size:20px;
-            font-family: 'Berkshire Swash', cursive;
-        }
-       .mus-photo{ 
-            display:grid;
-            flex-basis:200px;
-            height:400px;
-            margin-top:40px;
-            margin-left:200px;
-            margin-right:200px;
-            border-top:1px solid cyan;
-            background:#ccc;
-            box-shadow:1px 2px 2px;
-            outline-style:outset;
-            outline-offset:23px;
-            outline:cyan;
-       }
-       .header{
-            font-size:30px;
-            height:100px;
-        }
-        #drop-down{
-            position:absolute;
-            margin:0;
-            display:grid;
-            width:170px;
-            height:300px;
-            border:1px solid red;
-            list-style:none;
-        }
-        .drop-down-list{
-            margin:0px;
-            padding:0px;
-            border-bottom:1px solid cyan;
-            
-        }
-       @media only screen and (max-width:300px){
-           .mus-photo{ 
-                height:150px;
-                margin-top:40px;
-                margin-left:20px;
-                margin-right:20px;
-                }
-            .header{
-                font-size:14px;
-                height:100px;
-            }
-        }
-        @media only screen and (min-width:300px) and (max-width:600px){
-           .mus-photo{ 
-                height:200px;
-                margin-top:40px;
-                margin-left:150px;
-                margin-right:150px;
-                background:#ccc;
-                }
-            .header{
-                font-size:14px;
-                height:100px;
-            }
-        }
-        @media only screen and (min-width:600px) and (max-width:768px){
-           .mus-photo{
-                margin-top:40px; 
-                margin-left:170px;
-                margin-right:170px;
-                background:#ccc;
-                }
-            .header{
-                font-size:14px;
-                height:100px;
-            }
-        }
-        @media only screen and (min-width:768px) and (max-width:1024px){
-           .mus-photo{ 
-                margin-top:40px;
-                margin-left:200px;
-                margin-right:200px;
-                background:#ccc;
-                }
-            .header{
-                font-size:14px;
-                height:100px;
-            }
-        }
-        @media only screen and (min-width:768px) and (max-width:1024px){
-           .mus-photo{ 
-                margin-top:40px;
-                margin-left:200px;
-                margin-right:200px;
-                background:#ccc;
-                }
-            .header{
-                font-size:14px;
-                height:100px;
-            }
-        }
-        @media only screen and (min-width:1024px) and (max-width:1400px){
-           .mus-photo{ 
-                margin-top:40px;
-                margin-left:200px;
-                margin-right:200px;
-                background:#ccc;
-                }
-            .header{
-                font-size:40px;
-                height:120px;
-            }
-        }
-
-    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
 </head>
 <body>
-    <header class="header">MUSTACCHIEO</header>
+    <header class="head">
+        <div class="profil-pic"></div>
+        <p style="font-family:sans-serif;color:white;position:absolute;top:123px;left:30px;">Profile picture</p>
+        <h1 style="paddding:0;margin:0;">Hi !</h1>
+        <h1 style="paddding:0;margin:0;">Here</h1>
+        <h1 style="paddding:0;margin:0;">Sumanta Kumar Malik</h1>
+    </header>
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">MY PROJECT</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">GALLERY</a>
@@ -176,24 +37,38 @@
             <a class="nav-link" href="#">BLOG</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">ABOUT</a>
+            <a class="nav-link disabled" href="#">WHO AM I ?</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">CONTACT</a>
+            <a class="nav-link disabled" href="#">CONTACT ME</a>
         </li>
-        <li class="nav-item">
-                <a class="nav-link disabled" href="#">HELP</a>
-        </li>
-  </ul>
-  <ul id="drop-down" class="shadow-none p-3 mb-5 bg-light rounded">
+    </ul>
+    <ul id="drop-down" class="shadow-none p-3 mb-5 bg-light rounded">
+      <li class="drop-down-list">My Prjects</li>
       <li class="drop-down-list">Gallery</li>
-      <li class="drop-down-list">International spa</li>
-      <li class="drop-down-list">Hair and Beard Style</li>
       <li class="drop-down-list">Blog</li>
-      <li class="drop-down-list">About</li>
       <li class="drop-down-list">Contact</li>
+      <li class="drop-down-list">About</li>
       <li class="drop-down-list">Feedback</li>
-  </ul>
-  <div class="mus-photo"></div>
+    </ul>
+<div class="mus-photo">
+    <div class="project-animation">
+        <div class="project-logo logo-java animated rotateOut infinite"></div>
+        <div class="project-logo logo-javascript animated rotateOut infinite"></div>
+        <div class="project-logo logo-recat  animated rotateOut infinite"></div>
+        <h1 class="lang-text">Java Script</h1>
+        <h1 class="lang-text react-text">React Js</h1>
+        <h1 class="lang-text dstr-text">Data Structure</h1>
+    </div>
+</div>
+<div class="course-delopr">
+    <label class="tag-name">F</label>
+    <span class="text-ull">ull</span>
+    <label class="tag-name tag-s">S</label>
+    <span class="text-ull text-tack">tack</span>
+    <label class="tag-name tag-d">D</label>
+    <span class="text-ull text-eveloper">eveloper</span>
+</div>
+  <script src="resources/script.js"></script>
 </body> 
 </htm>
