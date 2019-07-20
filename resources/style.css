@@ -61,6 +61,45 @@
   100%{left:500px;}
   100%{left:20px;}
 }
+@-o-keyframes profilePic{
+  0%{left:20px;border-color:red;}
+  40%{left:600px;}
+  41%{left:670px;z-index:-10;}
+  50%{left:1280px;border-color:red;z-index:10;}
+  80%{left:1300px;}
+  87%{left:870px;z-index:10;}
+  88%{left:879px;z-index:-10;}
+  90%{left:700px;z-index:-10;}
+  91%{left:500px;}
+  100%{left:500px;}
+  100%{left:20px;}
+}
+@-webkit-keyframes profilePic{
+  0%{left:20px;border-color:red;}
+  40%{left:600px;}
+  41%{left:670px;z-index:-10;}
+  50%{left:1280px;border-color:red;z-index:10;}
+  80%{left:1300px;}
+  87%{left:870px;z-index:10;}
+  88%{left:879px;z-index:-10;}
+  90%{left:700px;z-index:-10;}
+  91%{left:500px;}
+  100%{left:500px;}
+  100%{left:20px;}
+}
+@-moz-keyframes profilePic{
+  0%{left:20px;border-color:red;}
+  40%{left:600px;}
+  41%{left:670px;z-index:-10;}
+  50%{left:1280px;border-color:red;z-index:10;}
+  80%{left:1300px;}
+  87%{left:870px;z-index:10;}
+  88%{left:879px;z-index:-10;}
+  90%{left:700px;z-index:-10;}
+  91%{left:500px;}
+  100%{left:500px;}
+  100%{left:20px;}
+}
 
 .nav{
   background-color:black;
