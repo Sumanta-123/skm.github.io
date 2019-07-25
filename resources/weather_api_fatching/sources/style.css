@@ -1,0 +1,170 @@
+@charset "utf-8";
+	*{
+      box-sizing: border-box;
+	}
+    body{
+      padding:0;
+      margin:0;
+    }
+    #weather-page{
+      width: 100%;
+      height: 100vh;
+      padding-top:30px;
+    }
+    /* animation of background page goes here */
+    #weather-page{
+      -webkit-animation: weather 10s infinite;
+    -o-animation: weather 10s infinite;
+    -moz-animation: weather 10s infinite;
+    animation: weather 10s infinite;
+    animation-direction:alternate;
+    }
+    @-webkit-keyframes weather{
+      0%{background: url(images/bg_one.jpg);background-size:cover;}
+      25%{background: url(images/bg_two.jpg);background-size:cover;}
+      50%{background: url(images/bg_three.jpg);background-size:cover;}
+      75%{background: url(images/bg_four.jpg);background-size:cover;}
+      100%{background: url(images/bg_five.jpg);background-size:cover;}
+    }
+    @-o-keyframes weather{
+      0%{background: url(images/bg_one.jpg);background-size:cover;}
+      25%{background: url(images/bg_two.jpg);background-size:cover;}
+      50%{background: url(images/bg_three.jpg);background-size:cover;}
+      75%{background: url(images/bg_four.jpg);background-size:cover;}
+      100%{background: url(images/bg_five.jpg);background-size:cover;}
+    }
+    @-moz-keyframes weather{
+      0%{background: url(images/bg_one.jpg);background-size:cover;}
+      25%{background: url(images/bg_two.jpg);background-size:cover;}
+      50%{background: url(images/bg_three.jpg);background-size:cover;}
+      75%{background: url(images/bg_four.jpg);background-size:cover;}
+      100%{background: url(images/bg_five.jpg);background-size:cover;}
+    }
+      /* animation of background page end here  */
+    #weather-city{
+      width:1000px;
+      height: 600px;
+      border: 1px solid blue;
+      margin: 0 auto;
+      position: relative;
+      background-color: gray;
+      opacity: 0.8;
+      /* background: rgb(226, 219, 219); */
+      border-radius: 10px;
+    }
+    #weather-city h1{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      font-family: 'Fascinate', cursive;
+      color: orangered;
+      margin-top: 10px;
+    }
+    #user-city{
+      position: relative;
+      padding-left: 5px;
+      width: 200px;
+      height: 30px;
+      left: 300px;
+      font-size: 20px;
+      /* border-left: 5px solid rgb(33, 0, 143); */
+      border-radius: 5px;
+    }
+    #submit{
+      position: relative;
+      width: 150px;
+      height: 30px;
+      /* border: 1px solid white; */
+      background: #ccc;
+      font-family: sans-serif;
+      color: white;
+      left:510px;
+      top: -30px;
+      border-radius: 5px;
+    }
+    #submit:focus,#user-city:focus{
+      -webkit-box-shadow: 0 0 12px #8DD5E9;
+      -moz-box-shadow: 0 0 13px #8DD5E9;
+      -o-box-shadow: 0 0 10px #8DD5E9;
+      box-shadow: 0 0 10px #8DD5E9;
+      border:2px solid #8DD5E9;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      outline: none;
+    }
+    #submit:hover,#user-city:hover{
+      background:violet;
+    }
+    /* icon of weahter conditon goes here  */
+    #current-wthr-img{
+      width:200px;
+      height: 200px;
+      border:4px solid red;
+      position: relative;
+      float: left;
+      top: 50px;
+      left: 130px;
+      text-align: center;
+      font-weight: bold;
+      color:green;
+    }
+    /* city name goes here  */
+    #city-name{
+      position:relative;
+      top: 60px;
+      left:-150px;
+      text-align: center;
+      color: yellow;
+      font-size: 25px;
+    }
+    /* imge of current weather coding goes here  */
+      #img{
+        width: 110px;
+        height: 110px;
+        border:1px solid blue;
+        position: relative;
+        top: 20px;
+        left: 50px;
+      }
+  /*  and latitude style coding goes here */
+    #temp-report,#wind-report{
+      position: relative;
+      top: 70px;
+      left: 100px;
+      width:250px;
+      height: 250px;
+      border:4px solid red;
+      float: left;
+      font-size: 20px;
+      color:green;
+      padding:10px;
+    }
+    #wind-report{
+      top:-35px;
+      left:200px;
+    }
+    /*temperature heading goes here */
+    #temp{
+      position: relative;
+      top: 80px;
+      left: 170px;
+    }
+    /*wind heading goes here */
+    #wind{
+      position: relative;
+      left: 300px;
+      top: -20px;
+    }
+    /*temperatu div city div and wind div hide by display*/ 
+    #temp-div,#city-div,#wind-div{
+      display: none;
+    }
+/*responsive design coding goes from here ----------*/
+@media only screen and (max-width: 320px){
+	#weather-page{
+		background-repeat: repeat-x;
+	}
+}
