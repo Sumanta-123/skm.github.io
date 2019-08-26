@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Social media</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+<body>
+	<div id='page'>
+		<!------------- navbar coding start from here --------------->
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="col-lg-12 col-xl-12 pb-lg-1 col-md-12 col-xl-12 pb-lg-1 border">
+						<ul class="list-group list-group-horizontal-lg d-inline-block list-inline col-lg-12 pt-lg-1 pb-lg-2">
+							<li class="list-inline-item d-inline-block pl-2 mt-1 offset-sm-1 offset-lg-1 offset-md-1 border rounded" style="width:30px; height: 33px; font-size:20px;">
+								<!-- <a href="./social_site_maker.html"><i class="far fa-arrow-alt-circle-left mt-2 text-success"></i></a> -->
+							</i>	<a href="../../index.html" style="text-decoration: none;">E</a>
+							</li>
+							<li class="list-inline-item offset-lg-3 offset-xl-5 offset-md-1 offset-sm-2">
+								<form class="col-lg-12">
+									<input class="col-lg-12 col-xl-12 d-sm-none d-lg-inline-block d-xl-inline-block d-md-inline-block form-control" type="search" name="seach" placeholder="Search of type"/>
+								</form>
+							</li>
+							<li class="list-inline-item  ml-lg-5 pl-2 pb-2 ml-md-0 pl-2 border rounded col-1" style="width:30px; height: 33px; font-size:20px;">S</li>
+							<li class="list-inline-item">
+								<div class="d-flex">
+								  	<!-- Example single toggle dropdown menu button -->
+								  	<div class="btn-group">
+								  	  <button type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	    Setting
+								  	  </button>
+								  	  <div class="dropdown-menu dropdown-menu-right">
+								  	    <a class="dropdown-item" href="#">My Account</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">My Profile</a>
+								  	    <a class="dropdown-item" href="#">My Settings</a>
+								  	    <a class="dropdown-item" href="#">Session Defaults</a>
+								  	    <a class="dropdown-item" href="#">Reload</a>
+								  	    <a class="dropdown-item" href="#">View Website</a>
+								  	    <a class="dropdown-item" href="#">Toggle Full Width</a>
+								  	    <a class="dropdown-item" href="#">Background Jobs</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">Log Out</a>
+								  	  </div>
+								  	</div>
+								  	<div class="btn-group ml-2">
+								  	  <button type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	    Help
+								  	  </button>
+								  	  <div class="dropdown-menu dropdown-menu-right">
+								  	    <a class="dropdown-item" href="#">Documentation</a>
+								  	    <a class="dropdown-item" href="#">User Forum</a>
+								  	    <a class="dropdown-item" href="#">Report an Issue</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">About</a>
+								  	    <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+								  	  </div>
+								  	</div>
+								</div>
+							</li>
+							<li class="list-inline-item"><i style='font-size:24px' class='far'>&#xf27a;</i></li>
+							<li class="list-inline-item d-inline-block pt-1 pl-2 pr-2  bg-light rounded border">0</li>
+						</ul>
+		 			</nav>
+		 		</div>
+			</div>
+		<!------------- navbar coding start end here --------------->
+		<!-------------------------- social media page coding start from here -------------->
+		<div class="row m-0" >
+		<div class="container-fluid border" style="height: 50px;">
+			<div class="row">
+				<div class="pl-xl-5 ml-lg-5  col-12">
+					<h3 class="col-lg-1 col-md-2 col-sm-1 pt-1 pb-2 float-left ml-md-2 ml-sm-3 text-center">Social</h3>
+					<button type="button" class="btn btn-primary offset-lg-9 offset-md-8 offset-sm-8 float-left mt-1 pl-sm-2 pr-sm-2 col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1"data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="height:35px;"> 
+						Post
+						<!---------------fade animation for post social start here------------!-->
+					</button>
+					<!-- this below div is the parent of fadeIn modal after click on post button -->
+	      			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						    <div class="modal-content col-sm-12" >
+						      	<div class="row">
+						      	    <div class="col-6">
+						      	    	<div class="modal-header border-0">
+						      	    	  <h5 class="modal-title mt-2" id="exampleModalLabel">Create Post</h5>
+						      	    	</div>
+						      	    </div>
+						      	    <div class="col-6">
+						      	    	<div class="modal-footer">
+							      	    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      	    	<button type="button" class="btn btn-primary">Post</button>
+						      	    	</div>
+						      	    </div>
+	      	    				</div>
+	      	    				<hr style="height:1px; width: 100%; background-color: lightgrey; margin-top: -13px;" />
+	      	      					<div class="modal-body">
+	      	        					<form id="add-field-to-journal">
+	      	           						<div class="row">
+	      	           							<p class="col-12 d-inline-block border-bottom text-danger">Content</p>
+							      	           	<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+							      	           		<ul class="col-12 list-unstyled m-0 border" style="background: #EEFFFD;">
+							      	           			<li class="col-1 d-inline-block ml-1">
+							      	           				<select class="col-12">
+							      	           					<option value="heading">Normal</option>
+							      	           					<option value="heading"><h1>heading</h1></option>
+							      	           					<option value="heading"><h2>heading</h2></option>
+							      	           					<option value="heading"><h3>heading</h3></option>
+							      	           					<option value="heading"><h4>heading</h4></option>
+							      	           					<option value="heading"><h5>heading</h5></option>
+							      	           				</select>
+							      	           			</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">B</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-italic">I</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">U</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">A</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">A</li>
+							      	           			<li class="col-1 d-inline-block font-weight-bold">"</li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-paperclip"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="far fa-image"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-list"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="far fa-list-ol"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-left"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-right"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-justify"></i></li>
+							      	           		</ul>
+							      	           		<div>
+							      	           			<textarea class="col-12" rows="11" style="overflow: hidden;">
+							      	           				
+							      	           			</textarea>
+							      	           		</div>
+							      	           	</div>
+			      	           				</div>
+			      	           			</form>	
+			      	           		</div>
+			      	        		
+			      	      		</div>
+		      	    		</div>
+		      	  		</div>
+		      		</div>
+				</div>
+			</div>
+		</div>
+		<!-- ------------------post fadeIn animation coding end here ------------------>
+		<div class="container-fluid mt-xsm-2">
+			<div class="row p-0 m-0" style="height: 100vh; ">
+				<div class="col-12 float-left col-md-12 col-sm-12 col-lg-9 col-lg-9" style=" height: 100vh">
+					<p class="ml-4 d-md-none d-lg-none d-sm-none d-xsm-none d-none d-lg-inline d-xl-inline">
+						leaderboard
+					</p> 
+					<div class="container-fluid p-2" style="height: 30vh; ">
+						<div class="col-12 p-2 border" style="height:60px; ">
+							<input type="search" name="search" placeholder="Search users" class="col-6 float-left rounded">
+							<div class="col-4 float-right">
+								<select style="height: 30px;" class="rounded">
+									<option>Life Time</option>
+									<option>This Month</option>
+									<option>This Week</option>
+									<option>Today</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 rounded border pt-2 pb-1 d-flex">
+							<div class="col-1 ml-lg-1 float-left border text-center p-1">#</div>
+							<div class="col-4 ml-lg-1 float-left border text-center p-1">User</div>
+							<div class="col-2 ml-lg-1 float-left border text-center p-1">Enery Points</div>
+							<div class="col-2 ml-lg-1 float-left border text-center p-1">Review Points</div>
+							<div class="col-2 ml-lg-1 float-left border text-center p-1">Point Given</div>
+						</div>
+						<div class="col-lg-12 col-md-12 rounded border pt-2 pb-1 d-flex">
+							<div class="col-1 ml-1 float-left border text-center">1</div>
+							<div class="col-4 ml-1 float-left border text-center" style="height:100%;">
+								<img src="" class="col-1 float-left mt-1 border" style="height:80%;">
+								<label class="col-6 float-left p-1">S K MALIK</label>
+							</div>
+							<div class="col-2 ml-1 float-left border text-center p-1">Enery Points</div>
+							<div class="col-2 ml-1 float-left border text-center p-1">Review Points</div>
+							<div class="col-2 ml-1 float-left border text-center p-1">Point Given</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-3 float-left d-sm-none d-md-none d-lg-block d-none d-xl-block" style="height: 100vh;">
+					<p class="col-12 mt-4">Upcoming Events</p>
+					<p class="col-12">No. Upcoming Chat</p>
+					<p class="col-12">No. Upcoming Events</p>
+					<button class="col-12 border-0 bg-light text-left rounded">Open Chat</button>
+					<div class="col-12  mt-4 chat-box  pt-2 border rounded">
+						<div class="row">
+							<input type="text" class="rounded ml-2" name="chatbox" class="ml-2" placeholder="Create New Chat" style="font-size: 12px;"/>
+							<button class="border-0 bg-light ml-2">New</button><i class="fas fa-compress p-1 d-inline-block border ml-1"></i>
+							<div class="col-12"></div>
+							<!-- some issue is going here  -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/ef4e81bea7.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

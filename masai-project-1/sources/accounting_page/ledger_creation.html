@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ERP Next</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<div id='page'>
+		<div class="container-fluid" style="border: 1px solid #C4C4C4; height: 50px;">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-5">
+					<h3 class="col-lg-6 pt-1 pb-2 xsm-text-journal">Journal Entry</h3>
+				</div>
+				<div class="col-lg-4 offset-lg-1 pt-1 col-md-5 col-sm-3 offset-sm-3 offset-md-1 offset-xl-2 xsm-journal">
+					<div class="btn-group ml-sm-4 ml-lg-5 ">
+						<button type="button" class="btn btn-lightgrey dropdown-toggle mt-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+						    <span class="d-md-inline d-sm-none d-lg-inline d-xl-inline d-xsm-none">
+						    	Menu
+						    </span>
+						</button>
+						<div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-sm-right jounal-menu-dropdown">
+						    <button class="dropdown-item" type="button">Import</button>
+						    <button class="dropdown-item" type="button">User Permission</button>
+						    <button class="dropdown-item" type="button">Role Permission Manager</button>
+						    <button class="dropdown-item" type="button">Customize</button>
+						    <button class="dropdown-item" type="button">Toggle Sidebar<span class="m-2"> Ctrl+J</span></button>
+						    <button class="dropdown-item" type="button">Share URL<span class="m-4"> Ctrl+K</span></button>
+						    <button class="dropdown-item" type="button">Setting <span class="m-5"> Ctrl+L</span></button>
+					  	</div>
+					</div>
+					<button type="button" class="btn btn-lightgrey d-sm-none d-md-inline d-xl-inline d-lg-inline d-xsm-none">Refresh</button>
+					<button type="button" class="btn btn-primary btn-new" style="height:35px;">
+						<span class="d-md-inline d-sm-none d-lg-inline d-xl-inline d-xsm-none">New</span>
+						<span class="d-md-none d-lg-none d-xl-none text-sm-center text-light" style="font-size:20px;margin-left: -7px;">+</span>
+						<!---------------it is not working raise issue small screen------------!-->
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="container-fluid">
+				<div class="row">
+				<!---------------------left nav bar for ledger creation ------------------------->
+					<div class="col-lg-3 col-xl-3 d-md-none d-sm-none d-lg-block d-xl-block d-xsm-none float-left border-left-0" style="height: 100vh;border:1px solid #C4C4C4;">
+						<div class="container">
+							<ul class="list-unstyled ml-5 mt-4">
+						      	<li>
+							      	<div class="btn-group col-8 pl-0 pr-0">
+								      	  <button type="button" class="btn btn-light text-left dropdown-toggle mt-0 col-12" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+								      	    Reports
+								      	</button>
+								      	<div class="dropdown-menu dropdown-menu-lg-left jounal-menu-dropdown">
+								      	    <button class="dropdown-item" type="button">Report Builder</button>
+								      	    <div class="dropdown-divider"></div>
+								      	    <button class="dropdown-item" type="button">Bank Clearance Summary</button>
+								      	    <button class="dropdown-item text-wrap" type="button">Banck Reconciliation Statement
+								      	    </button>
+								      	    <button class="dropdown-item text-wrap" type="button">Payment Period Based On Invoice Date
+								      	    </button>
+								      	</div>
+							      	</div>
+						      	</li>
+						      	<li>List</li> 
+							    	<li>
+								      	<button type="button" class="btn btn-light btn-calender dropdown-toggle mt-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+								      	  Calendar
+								      	</button>
+							      	</li>
+							      	<li>
+							      		<div class="btn-group btn-calender border-0">
+									      	<button type="button" class="btn btn-light btn-calender dropdown-toggle mt-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+									      	  Khanban
+									      	</button>
+									      	<div class="dropdown-menu dropdown-menu-lg-left jounal-menu-dropdown">
+									      	  	<button class="dropdown-item" type="button">New Khanban Board</button>
+									      	</div>
+								    	</div>
+							      	</li>
+						      		<li class="mb-3">FILTER BY</li>
+						      		<li>
+				      	      			<button type="button" class="btn btn-light btn-calender dropdown-toggle mt-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+				      	      	  			Assigned To
+				      	      			</button>
+						      		</li>
+						      		<li>
+						      			<button type="button" class="btn btn-light col-8 ml-0 pl-0 text-left" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+						      				Add Field
+						      				<span style="font-size:18px; margin-left: 19px;">+</span>
+						      			</button>
+						      			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+											    <div class="modal-content col-sm-12" >
+											      	<div class="row">
+											      	    <div class="col-6">
+											      	    	<div class="modal-header border-0">
+											      	    	  <h5 class="modal-title mt-2" id="exampleModalLabel">Add Filter By</h5>
+											      	    	</div>
+											      	    </div>
+											      	    <div class="col-6">
+											      	    	<div class="modal-footer">
+												      	    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												      	    	<button type="button" class="btn btn-primary">Add</button>
+											      	    	</div>
+											      	    </div>
+						      	    				</div>
+						      	    				<hr style="height:1px; width: 100%; background-color: lightgrey; margin-top: -13px;" />
+						      	      					<div class="modal-body">
+						      	        					<form id="add-field-to-journal">
+						      	           						<div class="row">
+						      	           							<p class="col-12 d-inline-block border-bottom">Journal Entry</p>
+												      	           	<div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+												      	           		<ul class="col-12 list-unstyled m-0">
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Entry Type</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Company</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Total Amount Currency</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Write Off Based On</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Print Heading</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Payment Order</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Stock Entry</label>
+												      	           			</li>
+												      	           			<li class="col-12 p-0 m-0">
+												      	           				<input type="checkbox" name="entry-type" class="col-2">
+												      	           				<label class="col-10">Amended From</label>
+												      	           			</li>
+												      	           		</ul>
+												      	           	</div>
+						      	           							<div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+											      	        	   	<ul class="col-12 list-unstyled ml-0">
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Series</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Finance Book</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Inter Company Journal Entry Reference</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Latter Head</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Mode of Payment</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Is Opening</label>
+											      	           			</li>
+											      	           			<li class="col-12 p-0 m-0">
+											      	           				<input type="checkbox" name="entry-type" class="col-2">
+											      	           				<label class="col-10">Auto Repeat</label>
+							      	           							</li>
+								      	           					</ul>
+								      	           				</div>
+								      	           			</div>
+								      	        		</form>
+								      	      		</div>
+							      	    		</div>
+							      	  		</div>
+							      		</div>
+						      		</li>
+					      			<li>TAGS</li>
+					      			<li>
+								      	<div class="btn-group col-8 pl-0 pr-0">
+	      							      	<button type="button" class="btn btn-light dropdown-toggle text-left mt-0" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+	      							      	    Tags
+	      							      	</button>
+      							      	  	<div class="dropdown-menu dropdown-menu-lg-left jounal-menu-dropdown pl-1 pr-1">
+	      							      	    <form id="tag-form">
+													<input type="search" class="form-control" placeholder="Search">
+	      							      	    </form>
+      							      	  	</div>
+      							      	</div>
+									</li>
+						      		<li>SAVE FILTER</li>
+						      		<li>
+						      			<form id="tag-form">
+											<input type="search" class="form-control" placeholder="Search">
+  							      	    </form>
+  							      	</li>
+								</ul>
+							</div>	
+						</div>
+						<!------------------------ right of journal voucher entry---------------- -->
+						<div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 journal-entry float-left" style="height: 100vh; border: 1px solid  #C4C4C4;">
+							<div class="row" style="height: 70px;">
+								<div class="col-lg-12 pt-lg-3 col-md-12 col-sm-11 pt-sm-2 pt-md-2 col-sm-12" style="border:1px solid #C4C4C4;">
+									<form action="">
+										<div class="input-group mb-3 col-lg-3 col-md-3 col-sm-3 float-left offset-md-1 offset-sm-2">
+										  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+										<div class="input-group mb-3 col-lg-3 col-md-3 col-sm-3 float-left">
+										  	<select class="custom-select" id="inputGroupSelect01">
+										    	<option value="Journa Entry">Journal Entry</option>
+										    	<option value="Inter Company Journal Entry">Inter Company Journal Entry</option>
+										    	<option value="Bank Entry">Bank Entry</option>
+										    	<option value="Cash Entry">Cash Entry</option>
+										    	<option value="Credit Card Entry">Credit Card Entry</option>
+										    	<option value="Debit Node">Debit Node</option>
+										    	<option value="Contra Entry">Contra Entry</option>
+										    	<option value="Excise Entry">Excise Entry</option>
+										    	<option value="Write of Entry">Write of Entry</option>
+										    	<option value="Opening Entry">Opening Entry</option>
+										    	<option value="Depriciation">Depriciation Entry</option>
+										    	<option value="Exchange Rate Revaluation">Exchange Rate Revaluation</option>
+										  	</select>
+										</div>
+										<div class="input-group mb-3 col-lg-3 col-md-3 col-sm-3 float-left">
+										  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="row mt-md-1 mt-sm-1" style="height: 50px;">
+								<div class="col-lg-12 pt-lg-1 col-md-12 col-sm-11 pt-sm-1 pt-md-1 col-sm-12" id="add-filter-btn" style="border:2px solid #C4C4C4;; ">
+									<button type="button" class="btn btn-primary col-lg-2 col-md-2 col-sm-3">Add Filter</button>
+									<a href="#" class="offset-lg-5 offset-xl-7 offset-md-5 offset-sm-5">Last Modified On</a>
+									<i style="font-size:24px color: #C4C4C4;" class="fa float-right mr-lg-5 mt-lg-1">&#xf093;</i>
+								</div>
+							</div>
+						<div class="row" style="height: 83.5%;">
+							<div class="col-lg-12">
+								<div id="new-journal-create">
+									<p class="col-12" style="color:lightgrey;">No Journal Entry Found</p>
+									<button class="col-12 btn-primary text-light">Create a new Journal Entry</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<script src="https://kit.fontawesome.com/ef4e81bea7.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

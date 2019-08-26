@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+<body>
+	<div id='blog-page'>
+		<!------------- navbar coding start from here --------------->
+			<div class="container-fluid m-0">
+				<div class="row">
+					<nav class="col-lg-12 col-xl-12 pb-lg-1 col-md-12 col-xl-12 pb-lg-1 border">
+						<ul class="list-group list-group-horizontal-lg d-inline-block list-inline col-lg-12 pt-lg-1 pb-lg-2">
+							<li class="list-inline-item d-inline-block pl-2 mt-1 offset-sm-1 offset-lg-1 offset-md-1 border rounded" style="width:30px; height: 33px; font-size:20px;">
+									<a href="../../index.html" style="text-decoration: none;">E</a>
+							</li>
+							<li class="list-inline-item offset-lg-3 offset-xl-5 offset-md-1 offset-sm-2">
+								<form class="col-lg-12">
+									<input class="col-lg-12 col-xl-12 d-sm-none d-lg-inline-block d-xl-inline-block d-md-inline-block form-control" type="search" name="seach" placeholder="Search of type"/>
+								</form>
+							</li>
+							<li class="list-inline-item  ml-lg-5 pl-2 pb-2 ml-md-0 pl-2 border rounded col-1" style="width:30px; height: 33px; font-size:20px;">S</li>
+							<li class="list-inline-item">
+								<div class="d-flex">
+								  	<!-- Example single toggle dropdown menu button -->
+								  	<div class="btn-group">
+								  	  <button type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	    Setting
+								  	  </button>
+								  	  <div class="dropdown-menu dropdown-menu-right">
+								  	    <a class="dropdown-item" href="#">My Account</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">My Profile</a>
+								  	    <a class="dropdown-item" href="#">My Settings</a>
+								  	    <a class="dropdown-item" href="#">Session Defaults</a>
+								  	    <a class="dropdown-item" href="#">Reload</a>
+								  	    <a class="dropdown-item" href="#">View Website</a>
+								  	    <a class="dropdown-item" href="#">Toggle Full Width</a>
+								  	    <a class="dropdown-item" href="#">Background Jobs</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">Log Out</a>
+								  	  </div>
+								  	</div>
+								  	<div class="btn-group ml-2">
+								  	  <button type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	    Help
+								  	  </button>
+								  	  <div class="dropdown-menu dropdown-menu-right">
+								  	    <a class="dropdown-item" href="#">Documentation</a>
+								  	    <a class="dropdown-item" href="#">User Forum</a>
+								  	    <a class="dropdown-item" href="#">Report an Issue</a>
+								  	    <div class="dropdown-divider"></div>
+								  	    <a class="dropdown-item" href="#">About</a>
+								  	    <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+								  	  </div>
+								  	</div>
+								</div>
+							</li>
+							<li class="list-inline-item"><i style='font-size:24px' class='far'>&#xf27a;</i></li>
+							<li class="list-inline-item d-inline-block pt-1 pl-2 pr-2  bg-light rounded border">0</li>
+						</ul>
+		 			</nav>
+		 		</div>
+			</div>
+		<!------------- navbar coding start end here --------------->
+		<!-------------------------- social media page coding start from here -------------->
+		<div class="row m-0" >
+		<div class="container-fluid border" style="height: 50px;">
+			<div class="row">
+				<div class="pl-xl-5 ml-lg-5  col-12">
+					<h3 class="col-lg-1 col-md-2 col-sm-1 pt-1 pb-2 float-left ml-md-2 ml-sm-3 text-center">Blogs</h3>
+					<button type="button" class="btn btn-primary offset-lg-9 offset-md-8 offset-sm-8 float-left mt-1 pl-sm-2 pr-sm-2 col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1"data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="height:35px;"> 
+						Post
+						<!---------------fade animation for post social start here------------!-->
+					</button>
+					<!-- this below div is the parent of fadeIn modal after click on post button -->
+	      			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						    <div class="modal-content col-sm-12" >
+						      	<div class="row">
+						      	    <div class="col-6">
+						      	    	<div class="modal-header border-0">
+						      	    	  <h5 class="modal-title mt-2" id="exampleModalLabel">Create Blog</h5>
+						      	    	</div>
+						      	    </div>
+						      	    <div class="col-6">
+						      	    	<div class="modal-footer">
+							      	    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      	    	<button type="button" class="btn btn-primary">Post</button>
+						      	    	</div>
+						      	    </div>
+	      	    				</div>
+	      	    				<hr style="height:1px; width: 100%; background-color: lightgrey; margin-top: -13px;" />
+	      	      					<div class="modal-body">
+	      	        					<form id="add-field-to-journal">
+	      	           						<div class="row">
+	      	           							<p class="col-12 d-inline-block border-bottom text-danger">Content</p>
+							      	           	<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+							      	           		<ul class="col-12 list-unstyled m-0 border" style="background: #EEFFFD;">
+							      	           			<li class="col-1 d-inline-block ml-1">
+							      	           				<select class="col-12">
+							      	           					<option value="heading">Normal</option>
+							      	           					<option value="heading"><h1>heading</h1></option>
+							      	           					<option value="heading"><h2>heading</h2></option>
+							      	           					<option value="heading"><h3>heading</h3></option>
+							      	           					<option value="heading"><h4>heading</h4></option>
+							      	           					<option value="heading"><h5>heading</h5></option>
+							      	           				</select>
+							      	           			</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">B</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-italic">I</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">U</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">A</li>
+							      	           			<li class="col-1 ml-1 d-inline-block font-weight-bold">A</li>
+							      	           			<li class="col-1 d-inline-block font-weight-bold">"</li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-paperclip"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="far fa-image"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-list"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="far fa-list-ol"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-left"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-right"></i></li>
+							      	           			<li class="col-1 d-inline-block"><i class="fas fa-align-justify"></i></li>
+							      	           		</ul>
+							      	           		<div>
+							      	           			<textarea class="col-12" rows="11" style="overflow: hidden;">
+							      	           			</textarea>
+							      	           		</div>
+							      	           	</div>
+			      	           				</div>
+			      	           			</form>	
+			      	           		</div>
+			      	      		</div>
+		      	    		</div>
+		      	  		</div>
+		      		</div>
+				</div>
+			</div>
+		</div>
+		<!-- ------------------post fadeIn animation coding end here ------------------>
+		<div class="row m-0">
+			<div class="col-12 d-flex " style="height: 80%;">
+				<div class="row p-0 m-0" style="height:content;">
+					<div class="col-12">
+						<div class="col-12 ml-0 ml-md-2 pt-4 pl-5 ">
+							<img src="../images/blog/iphone_11.jpg" class="col-sm-12 col-md-12 col-lg-6 float-left border rounded blog-img" />
+							<div class="col-12 col-lg-5 col-md-12 ml-md-2 ml-sm-0  float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+								<h3 class="col-12  d-flex">Upcoming iPhone 11 On Nov 2019</h3>
+								The iPhone 11 series is rumoured to go official on September 10th, and the series is said to include three new models. Now, Bloomberg has published a report outlining new details about the iPhone 11 as well as information about the upcoming iPad Pro, the 2020 AirPods, and a cheaper HomePod. As for the 2019 iPhones go, the reports reiterated the Pro naming scheme for the OLED models and the main focus of these would be the triple rear camera setup consisting of a wide-angle, telephoto and ultra-wide lenses. The iPhone 11 Pro cameras are said to capture three images simultaneously from each one of these lenses and combine them to create higher-resolution pictures.
+								<div class="row mt-4 ">
+									<a href="https://www.facebook.com">
+										<i class="fab fa-facebook col-2 text-center  fa-icon-blog"></i>
+									</a>
+									<a href="https://twitter.com/">
+										<i class="fab fa-twitter-square col-2 text-center  fa-icon-blog"></i>
+									</a>
+									<a href="https://www.whatsapp.com/">
+										<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+					<div class="col-12  ml-2 pt-4 pl-5  ">
+						<img src="../images/blog/odirnary_life-01.jpg" class="col-12 col-lg-6 col-md-12 float-left border rounded blog-img" />
+						<div class="col-12 col-md-11 col-lg-5 ml-2 col-lg- float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12 d-flex">WHITE CHEDDAR AVOCADO ON-THE-GO GRILLED CHEESE </h3>
+								You are here: Home / FEATURED / White Cheddar Avocado On-the-Go Grilled Cheese
+								FEATURED Fun Foods for Families Lunch box school lunch ideas Uncategorized
+								This is a sponsored blog; while the views expressed here were genuinely mine, 
+								consideration was paid to me by Bays® English Muffins.
+								I really am a busy mom who is constantly on the go. I have a full–time job 
+								working outside of my home that I started one year ago and I have to say I do l
+								ove it. I get to work in an exciting workplace and I get to talk about the things
+								 I love each day, what’s better than that right? That does mean that I’m gone from m
+								 y house five days a week and I have to pack my own meals each day. Packing lunch 
+								 on-the-go can become rather tiring so I like to switch it up.
+						<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12  ml-2 pt-4 pl-5 ">
+						<img src="../images/blog/google-glass.jpg" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img" />
+						<div class="col-12 col-lg-5 col-md-12 ml-2 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12  d-flex">Google Glass </h3>
+							Augmented Reality has already gotten into our life in the forms of simulated experiment and education app, but Google is taking it several steps higher with Google Glass. Theoretically, with Google Glass, you are able to view social media feeds, text, Google Maps, as well as navigate with GPS and take photos. You will also get the latest updates while you are on the ground.
+							It’s truly what we called vision, and it’s absolutely possible given the fact that the Google’s co-founder, Sergey Brin has demo’ed the glass with skydivers and creatives. Currently the device is only available to some developers with the price tag of $1500, but expect other tech companies trying it out and building an affordable consumer version.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog "></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 ml-2 pt-4 pl-5 ">
+						<img src="../images/blog/form-1.jpg" class="col-12 col-md-12 col-lg-6  float-left border rounded blog-img" />
+						<div class="col-12 col-lg-5 col-md-12 ml-2 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12  d-flex">Form 1</h3>
+							Virtual Reality gaming is here in the form of Oculus Rift. This history-defining 3D headset lets you mentally feel that you are actually inside a video game. In the Rift’s virtual world, you could turn your head around with ultra-low latency to view the world in high resolution display.
+
+							There are premium products in the market that can do the same, but Rift wants you to enjoy the experience at only $300, and the package even comes as a development kit. This is the beginning of the revolution for next-generation gaming.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 ml-2 pt-4 pl-5 ">
+						<img src="../images/blog/leap-motion.jpg" class="col-12 col-lg-6 col-md-12 float-left border rounded blog-img" />
+						<div class="col-12 ml-2 col-lg-5 col-md-12 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12  d-flex">Leap Motion </h3>
+							Multi-touch desktop is a (miserably) failed product due to the fact that hands could get very tired with prolonged use, but Leap Motion wants to challenge this dark area again with a more advanced idea. It lets you control the desktop with fingers, but without touching the screen.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 ml-2 pt-4 pl-5  ">
+						<img src="../images/blog/oculus-rift.jpg" class="col-12 col-md-12 col-lg-6  float-left border rounded blog-img" />
+						<div class="col-12 col-md-12 col-lg-5 ml-2 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12 d-flex">Oculus Rift</h3>
+							The timing is perfect as the world is currently bombarded with the virtual reality topic that could also be attributed to Sword Art Online, the anime series featuring the characters playing games in an entirely virtual world. While we’re getting there, it could take a few more years to reach that level of realism. Oculus Rift is our first step.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 ml-2 pt-4 pl-5 ">
+						<img src="../images/blog/amazon-work-bags.png" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img" />
+						<div class="col-12 col-md-12 col-lg-5 ml-2 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12 d-flex">The Best Tote Bags From Amazon to Get You Through the Week In Style </h3>
+							Our work totes take a beating during the work week. They're crammed with laptop, chargers, and other miscellaneous objects. Thrown on the floor by our chairs. Pelted by the rain as we commute in to work. Thus, when it's time to finally replace our beloved tote, it can be hard to let go. When you're ready to start looking, however, there are tons of brands that make beautiful work-appropriate tote bags. But if your search hasn't turned up any winners, you may also want to check Amazon—the hidden gem of work totes. Of course, you'll need to dig through the mehhhs to get to the good ones, which we have found ahead. One of the next 12 work totes will win your heart, and laptop, over.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 ml-2 pt-4 pl-5">
+						<img src="../images/blog/best_products_header_jw7nzn.webp" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img"  />
+							<div class="col-12 col-md-12 ml-2 col-lg-5 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+								<h3 class="col-12 d-flex">Best Baby Products of 2019
+										Babylist families share their favorite, can’t-live-without products and gear for baby for 2019. </h3>
+										With everything else you had to do to prepare for baby, figuring out what you need as a new parent is
+										 challenging. There’s a ton of gear, an overwhelming amount of options and everything looks so 
+										 incredibly cute. But do you need it We asked Babylist families about their must-have items and 
+										 received more than 9,000 responses.After sifting through the data, we figured out which ones were the favorites.
+										 These are the gems parents swear made life easier.
+								<div class="row mt-4 ">
+									<a href="https://www.facebook.com">
+										<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+									</a>
+									<a href="https://twitter.com/">
+										<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+									</a>
+									<a href="https://www.whatsapp.com/">
+										<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="col-12 ml-2 pt-4 pl-5">
+							<img src="../images/blog/agriculture_procedure.png" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img"  />
+							<div class="col-12 col-md-12 ml-2 col-lg-5 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+								<h3 class="col-12 d-flex">Chicago Council Global Food Security Symposium 2019 Sets Sight on 
+									Managing Water for a Nutritious Food Future
+								</h3>
+									How will we grow an adequate quantity—and quality—of food to feed and nourish a rapidly growing, 
+									urbanizing world in the face of increasing water insecurity?” This was the primary problem 
+									considered by the Chicago Council on Global Affairs at the 2019 Global Food Security Symposium
+									 in Washington DC last week. This year’s symposium, ‘From Scarcity to Security: Managing Water
+									for a Nutritious Food Future’ saw the release of a 149-page report by the Council and focus 
+									on three central topics: the nature of the threat to water security; strategies to enhance water, 
+									food, and nutrition security; and ensuring that water solutions reach smallholder farmers. 
+									Read More
+								<div class="row mt-4 ">
+									<a href="https://www.facebook.com">
+										<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+									</a>
+									<a href="https://twitter.com/">
+										<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+									</a>
+									<a href="https://www.whatsapp.com/">
+										<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+			<div class="col-12 ml-2 pt-4 pl-5">
+				<img src="../images/blog/crystal_dry.jpg" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img" />
+					<div class="col-12 col-md-12 ml-2 col-lg-5 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+						<h3 class="col-12 d-flex">
+								THE ALL NEW BOSCH 800 SERIES DISHWASHER CRYSTAL DRY FROM BEST BUY
+						</h3>
+						We are a huge tech family! The Pezza family is always on the hunt for the best and greatest
+							appliances and of course, we always turn to Best Buy for this!  One area of the kitchen 
+							where I need to upgrade is  my dishwasher. While I love my dishwasher, it is at least 20 
+							years old and it is about time to upgrade. For this we are looking at the new Bosch 800
+							Series dishwasher available now at Best Buy. Design, reliability, functionality, 
+							and engineering are important to me and this new dishwasher has that and so much more!
+						<div class="row mt-4 ">
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+							</a>
+							<a href="https://twitter.com/">
+								<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+							</a>
+							<a href="https://www.whatsapp.com/">
+								<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="col-12 ml-2 pt-4 pl-5">
+					<img src="../images/blog/liquid.jpg" class="col-12 col-md-12 col-lg-6 float-left border rounded blog-img" />
+						<div class="col-12 col-md-12 ml-2 col-lg-5 float-left text-wrap p-2 text-justify border rounded" style="height: 100%;">
+							<h3 class="col-12 d-flex">
+									LIQUID VITAMIN DISPENSER- TESPO TO THE RESCUE!
+							</h3>
+							Over the last several years I’ve taken my fair share of over the counter vitamins,
+								trying out different brands to find the ones that work best for not only myself 
+								but for my family as well. In addition to a blend of daily magnesium, potassium
+								, and vitamin c, I also take several vitamins for various purposes such as en
+								hanced focus, and the occasional energy boost. Aside from the health benefits
+								we gain from them on a daily basis, there is one other thing that each vitamin
+									has in common: they’re a pain to swallow.
+							<div class="row mt-4 ">
+								<a href="https://www.facebook.com">
+									<i class="fab fa-facebook col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://twitter.com/">
+									<i class="fab fa-twitter-square col-2 text-center fa-icon-blog"></i>
+								</a>
+								<a href="https://www.whatsapp.com/">
+									<i class="fab fa-whatsapp col-2 text-center fa-icon-blog"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+			
+	<!--------------------- blog page end here ---------------------------->
+	<!-- <div class="col-3 ml-0 float-left d-sm-none d-md-none d-lg-block d-none d-xl-block " style="height: 100vh; border: 1px solid blue;">
+		<p class="col-12 mt-4">Upcoming Events</p>
+		<p class="col-12">No. Upcoming Blog</p>
+		<p class="col-12">No. Upcoming Events</p>
+		<button class="col-12 border-0 bg-light text-left rounded">Create Your Blog</button>
+		<div class="col-12  mt-4 chat-box  pt-2 border rounded">
+			<div class="row">
+				<input type="text" class="rounded ml-2" name="chatbox" class="ml-2" placeholder="Create Your Blog" style="font-size: 12px;"/>
+				<button class="border-0 bg-light ml-2">New</button><i class="fas fa-compress p-1 d-inline-block border ml-1"></i>
+				<div class="col-12"></div>
+				 some issue is going here  -->
+			</div>
+		</div>
+	</div> -->
+</div>
+<!------------blog page coding end here here--------------------->
+	</div>
+	<script src="https://kit.fontawesome.com/ef4e81bea7.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
