@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>State City Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <select id="state"></select>
+    <button id="g">Next</button>
+    <select id="city"></select>
+    <script>
+        var state_cities = [{"state": "Karnataka", "cities": ["Bangalore", "Mysore"]}, {"state": "Tamil Nadu", "cities": ["Chennai", "Tanjore"]},
+        {"state": "Odisha", "cities": ["BBSR", "Rourkela"]}]
+        $(document).ready(function(){
+            for(var i=0;i<state_cities.length;i++){
+                var elem = document.createElement('option');
+                elem.textContent=state_cities[i].state;
+                $('#state').append(elem)
+            }
+            $('button').click(function(){
+                for(var i=0;i<state_cities.length;i++){
+                    if($('#state').val()==state_cities[i].state){
+                        for(var j=0;j<state_cities[i].cities.length;j++){
+                            var elem = document.createElement('option');
+                            elem.setAttribute('class','city-name');
+                            elem.textContent=state_cities[i].cities[j];
+                            $('#city').append(elem);
+                                $('#state').click(function(){
+                                    $('.city-name').remove();
+                                })
+                                if($('#state').val()==state_cities[i].state){
+                                    $('button').click(function(){
+                                    elem.textContent=state_cities[i].cities[j];
+                                    $('#city').append(elem);
+                                })
+                            }
+                        }
+                    }
+                }
+            })
+        }) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Practise Deletions</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <div id="headings">
+            <h5>First H5</h5>
+            <h5>Second H5</h5>
+            <h5>Third H5</h5>
+        </div>
+        <div id="cont">
+            <div class="green">First DIV</div>
+            <div class="red">Second DIV</div>
+            <div class="blue">Third DIV</div>
+            <p class="green">First P</p>
+            <p class="red">Second P</p>
+            <p class="blue">Third P</p>
+        </div>
+        <hr/>
+        <button id="btn1">Remove H1</button>
+        <button id="btn2">Remove H3</button>
+        <button id="btn3">Remove H5</button>
+        <button id="btn4">Remove Red</button>
+        <button id="btn5">Remove DIVS</button>
+        <script>
+            $(document).ready(function(){
+                $('#btn1').click(function(){
+                    var elem = document.querySelectorAll('h1');
+                    for(var i=0;i<elem.length-1;i++){
+                        if(i==0){
+                            $('h1').remove();
+                            console.log('hello');
+                        }
+                    }
+                });
+                $('#btn2').click(function(){
+                    var elem = document.querySelectorAll('h3');
+                    for(var i=0;i<elem.length-1;i++){
+                        $('h3').remove();
+                    }
+                });
+                $('#btn3').click(function(){
+                    var elem = document.querySelectorAll('h5');
+                    for(var i=0;i<elem.length-1;i++){
+                        $('h5').empty();
+                    }
+                });
+                $('#btn4').click(function(){
+                    var elem = document.querySelectorAll('.red');
+                    for(var i=0;i<elem.length-1;i++){
+                        $('.red').empty();
+                    }
+                });
+                // $('#btn5').click(function(){
+                //     var elem = document.querySelectorAll('div');
+                //     for(var i=0;i<elem.length-1;i++){
+                //         if();
+                //     }
+                // });
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Values</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<button id="btn-name">NAME</button>
+	<button id="btn-gender">GENDER</button>
+	<button id="btn-email">EMAIL</button>
+	<button id="btn-mobile">MOBILE</button>
+	<script>
+		$(document).ready(function(){
+			$('#btn-name').click(function(){
+				$('#name').val("Sumanta Ku Malik");
+			});
+			$('#btn-gender').click(function(){
+				$('#gender').val("male");
+			});
+			$('#btn-email').click(function(){
+			 	$('#email').val('kumarmalik111@gmail.com');
+			});
+			$('#btn-mobile').click(function(){
+				$('#mobile').val('9778522344');
+			});
+		})
+	</script>
+</body>
+</html>
