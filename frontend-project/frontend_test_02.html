@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Todo List</title>
+	<style>
+
+     body>div{
+     	display:flex;
+     	/* padding:20px; */
+     	border:1px solid red; 
+     }
+     div>div{
+     	width:100%;
+     	color:black;
+     	border:1px solid red;
+     	padding: 10px 5px 10px 5px;
+     	font-family: sans-serif;
+     	text-align: center;
+     	font-weight: bold;
+     }
+     div:last-child>div{
+     	border: none;
+     }
+     div:last-child>div:nth-child(3){
+     	border:1px solid red;
+     	background: red;
+     }
+
+     body>div:nth-child(2n+1){
+     	background: pink;
+     }
+     body>div:nth-child(1){
+     	background: red;
+     }
+     div>div:nth-child(1){
+     	text-align: right;
+     }
+     div:not(:nth-child(1))>div:nth-child(4):after{
+     	content:"km2"
+     }
+     div:not(:nth-child(9))>div:nth-child(4):after{
+     	content:""
+     }
+     body:last-child>div{
+     	border: none;
+     }
+</style>
+</head>
+<body>
+	<div>
+		<div>
+			Rank
+		</div>
+		<div>
+			Country
+		</div>
+		<div>
+			Population
+		</div>
+		<div>
+			Area
+		</div>
+		<div>
+			Density
+		</div>
+	</div>
+	<div>
+		<div>
+			1
+		</div>
+		<div>
+			Singapore
+		</div>
+		<div>
+			5183700
+		</div>
+		<div>
+			710
+		</div>
+		<div>
+			73
+		</div>
+	</div>
+	<div>
+		<div>
+			2
+		</div>
+		<div>
+			Honk Kong
+		</div>
+		<div>
+			7601220
+		</div>
+		<div>
+			1104
+		</div>
+		<div>
+			6336
+		</div>
+	</div>
+	<div>
+		<div>
+			3
+		</div>
+		<div>
+			Gaza Strip
+		</div>
+		<div>
+			186379
+		</div>
+		<div>
+			360
+		</div>
+		<div>
+			5054
+		</div>
+	</div>
+	<div>
+		<div>
+			4
+		</div>
+		<div>
+			Bahrain
+		</div>
+		<div>
+			1234597
+		</div>
+		<div>
+			750
+		</div>
+		<div>
+			1646
+		</div>
+	</div>
+	<div>
+		<div>
+			5
+		</div>
+		<div>
+			Bangladesh
+		</div>
+		<div>
+			5183700
+		</div>
+		<div>
+			14750
+		</div>
+		<div>
+			1034
+		</div>
+	</div>
+	<div>
+		<div>
+			6
+		</div>
+		<div>
+			Tawain
+		</div>
+		<div>
+			23361147
+		</div>
+		<div>
+			36196
+		</div>
+		<div>
+			631
+		</div>
+	</div>
+	<div>
+		<div>
+			7
+		</div>
+		<div>
+			Mauritius
+		</div>
+		<div>
+			1288000
+		</div>
+		<div>
+			2404
+		</div>
+		<div>
+			631
+		</div>
+	</div>
+	<div>
+		<div>
+			8
+		</div>
+		<div>
+			Singapore
+		</div>
+		<div>
+			5183700
+		</div>
+		<div>
+			710
+		</div>
+		<div>
+			73
+		</div>
+	</div>
+	<div>
+		<div>
+
+		</div>
+		<div>
+			Total
+		</div>
+		<div>
+			1930839378
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+</body>
